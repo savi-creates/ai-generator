@@ -103,6 +103,16 @@ footer {
   color: #666;
 }
 
+footer a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(96, 30, 158);
+  text-decoration: underline;
+}
+
 footer p {
   margin-top: 10px;
 }
