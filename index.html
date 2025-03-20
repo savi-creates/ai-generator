@@ -7,21 +7,62 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>welcome to ai generator</h1>
+    <header>
+      <h1>Meme Generator</h1>
+      <p>Create your own memes with custom text and templates!</p>
+    </header>
+
+    <main class="meme-generator">
+      <section class="template-selector">
+        <label for="template">Choose a meme template:</label>
+        <select id="template">
+          <option value="drake">Drake Hotline Bling</option>
+          <option value="distracted">Distracted Boyfriend</option>
+          <option value="spongebob">Mocking Spongebob</option>
+          <option value="success">Success Kid</option>
+          <option value="upload">Upload Your Own</option>
+        </select>
+      </section>
+
+      <section class="image-uploader">
+        <label for="upload">Upload your image:</label>
+        <input type="file" id="upload" accept="image/*" />
+      </section>
+
+      <section class="text-inputs">
+        <label for="top-text">Top Text:</label>
+        <input type="text" id="top-text" placeholder="Enter top text" />
+
+        <label for="bottom-text">Bottom Text:</label>
+        <input type="text" id="bottom-text" placeholder="Enter bottom text" />
+      </section>
+
+      <section class="meme-preview">
+        <canvas id="meme-canvas"></canvas>
+      </section>
+
+      <section class="action-buttons">
+        <button id="generate">Generate Meme</button>
+        <button id="download">Download Meme</button>
+        <button id="share">Share Meme</button>
+      </section>
+    </main>
 
     <footer>
-      Coded by
-      <a href="https://github.com/savi-creates" target="_blank"
-        >Savannah Andresson,</a
-      >
-      is
-      <a href="https://github.com/savi-creates/ai-generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://meme-ai-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
+      <p>
+        Coded by
+        <a href="https://github.com/savi-creates" target="_blank"
+          >Savannah Andresson,</a
+        >
+        is
+        <a href="https://github.com/savi-creates/ai-generator" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://meme-ai-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </p>
     </footer>
 
     <script src="src/script.js"></script>
