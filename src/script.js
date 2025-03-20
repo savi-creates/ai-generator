@@ -31,10 +31,10 @@ function drawMeme() {
 
   ctx.drawImage(currentImage, 0, 0, memeCanvas.width, memeCanvas.height);
 
-  ctx.font = "40px Impact";
+  ctx.font = "40px 'Bangers', sans-serif";
   ctx.fillStyle = "white";
   ctx.strokeStyle = "black";
-  ctx.lineWidth = 4;
+  ctx.lineWidth = 2;
   ctx.textAlign = "center";
 
   ctx.fillText(topTextInput.value.toUpperCase(), memeCanvas.width / 2, 50);
